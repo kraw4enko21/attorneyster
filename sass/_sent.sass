@@ -1,0 +1,54 @@
+.sent
+    background: url('../img/sent/sent_bg.png') center center no-repeat
+    background-size: cover
+    padding: 140px 0
+    &_form
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        width: 1360px
+        margin:  auto
+        background: #1F2732
+        padding: 100px
+    &_input
+        width: 550px
+        height: 60px
+        margin: 15px 0
+        background: none
+        border: none
+        +Outfit
+        font-size: 25px
+        line-height: 22px
+        letter-spacing: 0.4px
+        color: #FFFFFF
+        border-bottom: 1px solid gray
+    &_message
+        width: 90%
+        padding-top: 30px
+        height: 150px
+    &_btn
+        margin: 51px auto 0
+        padding: 31px
+        background: #fff
+        font-size: 25px
+        line-height: 22px
+        letter-spacing: 0.4px
+        color: #3B434E
+@media (max-width: 1430px)
+    .sent
+        &_form
+            padding: 50px
+            width: 95%
+        &_input
+            width: 500px
+        &_message
+            width: 90%
+@media (max-width: 768px)
+    .sent
+        &_form
+            padding: 20px
+            width: 98%
+        &_input
+            width: 90%
+        &_message
+            width: 95%

@@ -1,0 +1,96 @@
+.blogs
+    hr
+        margin-top: 30px
+        border: none
+        color: #4E555F
+        background: #4E555F
+        height: 1px
+    span
+            +Outfit
+            display: block
+            margin: 20px 0
+            font-size: 20px
+            line-height: 32px
+            letter-spacing: 0.4px
+            color: #D1B06B
+    &_block
+        &-one
+            text-align: center
+            margin-bottom: 60px
+        &-two
+            display: flex
+            justify-content: space-around
+            flex-wrap: wrap
+            margin-top: 60px
+
+    &_title
+        +Cormorant
+        margin: 100px 0 15px
+        font-size: 45px
+        line-height: 54px
+        text-align: center
+        letter-spacing: 0.4px
+        color: #FFFFFF
+    &_content
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap
+        margin-top: 70px
+    &_left
+        width: 600px
+    &_right
+        padding-top: 100px
+        width: 650px
+        text-align: left
+
+    &_subtitle
+        +Cormorant
+        margin-top: 26px
+        font-size: 45px
+        line-height: 58px
+        letter-spacing: 0.4px
+        color: #FFFFFF
+        &-two
+            +Cormorant
+            margin-top: 20px
+            font-size: 30px
+            line-height: 39px
+            letter-spacing: 0.4px
+            color: #FFFFFF
+    &_text
+        +Outfit
+        margin: 20px 0
+        font-size: 20px
+        line-height: 32px
+        letter-spacing: 0.4px
+        color: #D7D7D7
+        &-two
+            +Outfit
+            margin: 20px 0
+            font-size: 20px
+            line-height: 32px
+            letter-spacing: 0.4px
+            color: #D7D7D7
+    &_link
+        +Outfit
+        font-size: 22px
+        line-height: 35px
+        letter-spacing: 0.4px
+        text-transform: capitalize
+        color: #D1B06B
+        text-decoration: none
+        border-bottom: 1px solid $orange
+    &_card
+        margin-bottom: 100px
+        width: 420px
+.section_foto
+    height: 248px
+    background: url('../img/section_foto.png') center center no-repeat
+    background-size: cover
+@media (max-width: 1430px)
+    .blogs
+        &_left
+            width: 500px
+        &_right
+            padding-top: 10px
+            width: 550px

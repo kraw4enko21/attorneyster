@@ -1,0 +1,76 @@
+.price
+    padding-top: 150px
+    color: #fff
+    &_header
+        display: flex
+        justify-content: space-between
+        align-items: center
+        flex-wrap: wrap
+        margin: 40px
+    &_title
+        +Cormorant
+        font-size: 45px
+        line-height: 58px
+        letter-spacing: 0.4px
+        text-transform: capitalize
+    &_icon
+        margin-top: 20px
+    &_text
+        +Outfit
+        display: block
+        width: 600px
+        font-size: 20px
+        line-height: 32px
+        letter-spacing: 0.4px
+        color: #D7D7D7
+    &_content
+        margin: 30px
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+    &_card
+        max-width: 430px
+        padding: 55px 50px
+        margin-bottom: 30px
+        background: #1F2732
+    &_subtitle
+        +Cormorant
+        font-size: 35px
+        line-height: 56px
+        letter-spacing: 0.4px
+    &_subtext
+        +Outfit
+        margin-top: 10px
+        margin-bottom: 40px
+        padding-bottom: 30px
+        font-size: 20px
+        line-height: 32px
+        letter-spacing: 0.4px
+        color: #D7D7D7
+        border-bottom: 1px solid #4E555F
+    &_block-two
+        display: flex
+        justify-content: space-between
+    &_btn
+        +Outfit
+        padding: 13px 42px
+        background: #161D27
+        font-size: 20px
+        line-height: 32px
+        letter-spacing: 0.4px
+        text-transform: capitalize
+        color: #fff
+        border: none
+        cursor: pointer
+@media (max-width: 1430px)
+    .price
+        &_content
+            justify-content: space-around
+@media (max-width: 1220px)
+    .price
+        &_text
+            margin-top: 30px
+            min-width: 80%
+        &_btn
+            padding: 13px 20px
+            font-size: 15px

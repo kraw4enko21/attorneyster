@@ -1,0 +1,103 @@
+.expert
+    &_content
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap
+        margin: 140px auto
+    &_left
+        width: 630px
+    &_right
+        width: 630px
+        background: #fff
+        padding: 40px
+    &_title
+        +Cormorant
+        margin-bottom: 10px
+        width: 577px
+        font-size: 45px
+        line-height: 58px
+        letter-spacing: 0.4px
+        text-transform: capitalize
+        color: #FFFFFF
+    &_text
+        +Outfit
+        margin: 40px 0
+        font-size: 20px
+        line-height: 32px
+        letter-spacing: 0.4px
+        color: #D7D7D7
+    &_block
+        border: 15px solid #D7D7D7
+        padding-top: 65px
+        padding-left: 55px
+    &_subtitle
+        +Cormorant
+        margin-bottom: 12px
+        font-size: 42px
+        line-height: 55px
+        letter-spacing: 0.4px
+        color: #1F2732
+    &_subtext
+        +Outfit
+        margin-bottom: 37px
+        font-size: 20px
+        line-height: 32px
+        letter-spacing: 0.4px
+        color: #909090
+    &_miniblock
+        display: flex
+        justify-content: start
+        height: 70px
+        margin-bottom: 75px
+        &-two
+            margin-left: 15px
+        &_title
+            +Outfit
+            font-size: 18px
+            line-height: 22px
+            letter-spacing: 0.4px
+            color: #1F2732
+    &_phone
+        +Outfit 
+        font-size: 30px
+        line-height: 42px
+        letter-spacing: 0.4px
+        color: #1F2732
+@media (max-width: 1430px)
+    .expert
+        &_left
+            width: 45%
+        &_right
+            width: 45%
+        &_block
+            padding-top: 20px
+        &_miniblock
+            margin-bottom: 50px
+@media (max-width: 1220px)
+    .expert
+        &_content
+            justify-content: center
+        &_left
+            width: 70%
+        &_right
+            margin-top: 30px
+            width: 70%
+@media (max-width: 768px)
+    .expert
+        &_left
+            width: 90%
+        &_right
+            padding: 20px
+            width: 90%
+        &_block
+            padding: 20px
+        &_title
+            width: 95%
+        &_miniblock
+            height: 60px
+        &_phone
+            font-size: 20px
+@media (max-width: 450px)
+    .expert
+        &_right
+            width: 98%

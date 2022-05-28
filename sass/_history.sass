@@ -1,0 +1,91 @@
+.history
+    background: url('../img/history/history_1.png') center top no-repeat
+    background-size: cover
+    padding: 140px 0
+    &_content
+        display: flex
+        justify-content: space-between
+        width: 1360px
+        margin: auto
+        padding: 80px 60px
+        background: rgba(31, 39, 50, 0.85)
+.block
+    &_title
+        +Cormorant
+        margin-bottom: 15px
+        font-size: 45px
+        line-height: 58px
+        letter-spacing: 0.4px
+        text-transform: capitalize
+        color: #FFFFFF
+    &_one
+        width: 418px
+        &_block
+            margin-top: 40px
+        &_subtitle
+            +Outfit
+            margin-bottom: 15px
+            font-size: 15px
+            line-height: 20px
+            letter-spacing: 0.4px
+            text-transform: capitalize
+            color: $orange
+        &_text
+            +Outfit
+            font-size: 18px
+            line-height: 24px
+            letter-spacing: 0.4px
+            color: #D7D7D7
+    &_two
+        width: 260px
+        height: 900px
+    &_three
+        width: 383px
+        &_text
+            +Outfit
+            margin: 45px 0
+            font-size: 18px
+            line-height: 24px
+            letter-spacing: 0.4px
+            color: #D7D7D7
+        &_block
+            display: flex
+            justify-content: space-between
+            flex-wrap: wrap
+            margin-bottom: 40px
+            
+            line-height: 24px
+            letter-spacing: 0.4px
+            color: #fff
+        &_subtitle
+            +Outfit 
+            font-size: 18px
+        &_number
+            +Outfit 
+            font-size: 18px
+        &_line
+            padding-top: 15px
+@media (max-width: 1430px)
+    .history
+        &_content
+            width: 90%
+    .block
+        &_two
+            display: none
+@media (max-width: 1220px)
+    .history
+        &_content
+            flex-wrap: wrap
+            justify-content: start
+    .block
+        &_three
+            margin-top: 50px
+@media (max-width: 768px)
+    .history
+        &_content
+            padding: 30px
+    .block_three
+        &_subtitle
+            font-size: 15px
+        &_number
+            font-size: 15px

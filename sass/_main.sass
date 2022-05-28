@@ -1,0 +1,132 @@
+body
+    background: #161D27
+.main
+    position: relative
+    //z-index: -5
+    // padding-bottom: 170px
+    // background-blend-mode: multiply
+    // background-image: url('../img/main/main_bg.png')
+    // background-position: center bottom
+    // background-repeat: no-repeat
+    // background-size: cover
+    // background-color: rgba(42, 65, 98, 0.9)
+    // background-image: url('../img/main/main_bg.png')
+    //background: rgba(31, 39, 50, 0.81)
+
+    &_header
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        padding-bottom: 20px
+    &_logo
+        width: 350px
+    &_container
+        // display: flex
+        // justify-content: space-between
+        &_one
+            //z-index: 5 
+            min-height: 1010px
+            background: rgba(31, 39, 50, 0.81)
+            padding: 30px
+    &_content
+        margin-top: 92px
+        padding-top: 40px
+        width: 672px
+    &_title
+        +Cormorant
+        font-size: 65px
+        line-height: 78px
+        letter-spacing: 0.4px
+        color: #FFFFFF
+    &_subtitle
+        margin-bottom: 30px
+        +Outfit
+        font-size: 22px
+        line-height: 40px
+        letter-spacing: 0.4px
+        color: $orange
+    &_man
+        position: absolute
+        width: 100%
+        left: 50%
+        bottom: 0px
+        width: 672px
+    &_bg
+        position: absolute
+        max-width: 1430px
+        z-index: -1
+        top: 0
+        left: 50%
+        transform: translateX(-50%)
+        &-foto
+            width: 100%
+    &_line
+        background-color: #4E555F
+.menu
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    padding: 32.5px 0 35.5px
+    border-top: 2px solid #4E555F
+    border-bottom: 2px solid #4E555F
+    &_links
+        padding: 19px 0 20px
+    &_link
+        +Outfit
+        margin-right: 46px
+        margin-bottom: 20px
+        color: #fff
+        text-decoration: none
+        &-active
+            color: $orange
+    &_contacts
+        display: flex
+        justify-content: space-between
+    &_contact
+        height: 62px
+@media (max-width: 1430px)
+    .main
+        &_bg
+            max-width: 1200px
+        &_man
+            width: 40%
+            left: 60%
+            bottom: 45px
+        &_container_one
+            min-height: 900px
+@media (max-width: 1220px)
+    .main
+        &_bg
+            max-width: 750px
+        &_man
+            display: none
+        &_header
+            justify-content: center
+    .menu
+        justify-content: center
+        &_contacts
+            margin-top: 30px
+@media (max-width: 768px)
+    .main
+        &_bg
+            max-width: 90%
+        &_container
+            text-align: center
+        &_content
+            margin-top: 30px
+            width: 95%
+        &_title
+            font-size: 40px
+        &_subtitle
+            font-size: 15px
+    .menu
+        &_link
+            margin: 20px 10px
+            font-size: 15px
+@media (max-width: 450px)
+    .menu
+        justify-content: center
+        &_link
+            display: inline-block
+            margin: 20px 20px
+            font-size: 20px

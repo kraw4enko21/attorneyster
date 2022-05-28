@@ -1,0 +1,74 @@
+.welcome
+    &_content
+        margin-top: 140px
+        padding: 0 40px
+        display: flex
+        justify-content: space-between
+
+    &_left
+        width: 467px
+    &_img
+        margin-bottom: 30px
+    &_right
+        max-width: 830px
+    &_title
+        +Cormorant
+        font-size: 45px
+        line-height: 58px
+        letter-spacing: 0.4px
+        text-transform: capitalize
+        color: #FFFFFF
+    &_icon
+        max-width: 95px
+        margin-top: 11px
+        margin-bottom: 43px
+    &_text
+        +Outfit
+        margin-bottom: 35px
+        font-size: 20px
+        line-height: 32px
+        letter-spacing: 0.4px
+        color: #D7D7D7
+    &_block
+        display: flex
+        justify-content: start
+        align-items: center
+    &_subtitle
+        +Cormorant
+        font-size: 40px
+        line-height: 52px
+        letter-spacing: 0.4px
+        color: #FFFFFF
+    &_block-two
+        margin-top: 45px
+    &_five
+        margin-right: 30px
+@media (max-width: 1430px)
+    .welcome
+        &_content
+            flex-wrap: wrap
+        &_left
+            width: 100%
+            display: flex
+            justify-content: space-around
+            flex-wrap: wrap
+@media (max-width: 1220px)
+    .welcome
+        &_right
+            width: 95%
+        &_block-two
+            width: 95%
+            display: flex
+            justify-content: space-around
+        &_five
+            width: 45%
+@media (max-width: 768px)
+    .welcome
+        &_content
+            padding: 0
+        &_left
+            justify-content: start
+        &_right
+            padding-left: 30px
+        &_img
+            width: 80%

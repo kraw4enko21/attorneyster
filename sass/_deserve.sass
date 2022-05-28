@@ -1,0 +1,126 @@
+.deserve
+    padding: 30px 0
+    background: #fff
+    &_content
+        margin-top: 70px
+        text-align: center
+    &_title
+        +Cormorant
+        width: 400px
+        margin: auto
+        margin-bottom: 10px
+        font-size: 45px
+        line-height: 54px
+        letter-spacing: 0.4px
+        text-transform: capitalize
+        color: #161D27
+        &-two
+            +Cormorant
+            margin: 0 50px
+            font-size: 50px
+            line-height: 60px
+            letter-spacing: 0.4px
+            text-transform: capitalize
+            color: #161D27
+    &_text
+        +Outfit
+        width: 635px
+        margin: auto
+        margin-bottom: 60px
+        font-size: 20px
+        line-height: 32px
+        text-align: center
+        letter-spacing: 0.4px
+        color: #909090
+    &_block
+        &-one
+            width: 100%
+            display: flex
+            justify-content: space-between
+            flex-wrap: wrap
+            margin-bottom: 80px
+        &-left
+            padding-top: 31px
+            width: 120px
+            height: 120px
+            text-align: center
+            border: 3px solid $orange
+        &-right
+            margin-left: 10px
+            text-align: left
+            padding-top: 10px
+        &-two
+            margin-top: 150px
+            margin-bottom: 60px
+            display: flex
+            justify-content: center
+            align-items: center
+        &-three
+            display: flex
+            justify-content: space-around
+            flex-wrap: wrap
+            align-items: center
+    &_img
+        &-three
+            margin: 20px 50px
+
+    &_card
+        display: flex
+        justify-content: start
+        width: 433px
+        padding: 30px
+    &_number
+        +Outfit
+        font-size: 25px
+        line-height: 39px
+        letter-spacing: 0.4px
+        color: #1F2732
+    &_subtitle
+        +Cormorant
+        font-size: 30px
+        line-height: 42px
+        letter-spacing: 0.4px
+        color: #1F2732
+    &_subtext
+        +Outfit
+        font-size: 20px
+        line-height: 32px
+        letter-spacing: 0.4px
+        text-transform: capitalize
+        color: #909090
+    &_dark
+        +Outfit
+        padding: 50px
+        background: url('../img/deserve/deserve_4.png') center center no-repeat
+        background-size: contain
+        width: 433px
+        color: #fff
+        text-align: left
+        &_title
+            font-size: 30px
+            line-height: 39px
+            letter-spacing: 0.4px
+        &_text
+            font-size: 20px
+            line-height: 26px
+            letter-spacing: 0.4px
+@media (max-width: 1430px)
+    .deserve
+        &_block
+            &-one
+                justify-content: center
+@media (max-width: 768px)
+    .deserve
+        &_title
+            width: 80%
+            &-two
+                font-size: 32px
+                line-height: 45px
+        &_text
+            width: 80%
+        &_subtitle
+            font-size: 25px
+        &_subtext
+            font-size: 15px
+        &_img-two
+            width: 20%

@@ -1,0 +1,98 @@
+.footer
+    &_header
+        display: flex
+        justify-content: center
+        margin: 60px 0
+        overflow: hidden
+    &_content
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap
+    &_block
+        &-one
+            width: 322px
+        &-two
+            width: 184px
+        &-three
+            width: 184px
+        &-four
+            width: 350px
+    &_miniblock
+        border-top: 1px solid #4E555F
+        border-bottom: 1px solid #4E555F
+    &_subtitle
+        +Cormorant
+        margin: 10px 0
+        font-size: 30px
+        line-height: 39px
+        letter-spacing: 0.4px
+        color: #FFFFFF
+    &_left
+        display: inline-block
+        width: 49%
+        margin-top: 0
+    &_right
+        display: inline-block
+        margin-top: 0
+        width: 49%
+    &_link
+        +Outfit
+        display: block
+        margin: 20px 0
+        font-size: 20px
+        line-height: 32px
+        letter-spacing: 0.4px
+        text-transform: capitalize
+        color: #D7D7D7
+        text-decoration: none
+    &_down
+        border-top: 1px solid #4E555F
+        border-bottom: 1px solid #4E555F
+        padding: 15px 0 20px
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        margin-top: 75px
+        margin-bottom: 20px
+    &_downtext
+        +Outfit
+        margin-left: 50px
+        font-size: 20px
+        line-height: 32px
+        letter-spacing: 0.4px
+        color: #D7D7D7
+    &_orange
+        +Outfit
+        font-size: 20px
+        line-height: 32px
+        letter-spacing: 0.4px
+        color: $orange
+    &_nav
+        display: flex
+        justify-content: space-around
+        align-items: center
+    &_links
+        margin: 0 15px
+@media (max-width: 1220px)
+    .footer
+        &_block
+            margin: 30px 50px
+@media (max-width: 768px)
+    .footer
+        &_img
+            &-one
+                display: none
+            &-two
+                display: none
+        &_icon
+            width: 80%
+            
+        &_content
+            justify-content: start
+        &_block
+            width: 98%
+            margin: 20px
+        &_down
+            justify-content: center
+        &_downtext
+            margin-bottom: 30px
